@@ -176,7 +176,7 @@ function Library:CreateWindow(Game)
 	Game_1.Position = UDim2.new(0.325657904, 0,0.00395268993, 0)
 	Game_1.Size = UDim2.new(0, 102,0, 44)
 	Game_1.Font = Enum.Font.FredokaOne
-	Game_1.Text = "Test Game"
+	Game_1.Text = Game
 	Game_1.TextColor3 = Color3.fromRGB(128,128,128)
 	Game_1.TextSize = 20
 	Game_1.TextXAlignment = Enum.TextXAlignment.Left
