@@ -4,9 +4,9 @@ local UserInputService = game:GetService("UserInputService")
 local Library = {}
 function Library:CreateWindow(Game)
 	
-	--if game.CoreGui:FindFirstChild("BruteLibrary") then
-		--game.CoreGui:FindFirstChild("BruteLibrary"):Destroy()
-	--end
+	if game.CoreGui:FindFirstChild("BruteLibrary") then
+		game.CoreGui:FindFirstChild("BruteLibrary"):Destroy()
+	end
 	
 	local BruteLibrary = Instance.new("ScreenGui")
 	local Main_1 = Instance.new("Frame")
@@ -119,7 +119,7 @@ function Library:CreateWindow(Game)
 	end)
 	
 	BruteLibrary.Name = "BruteLibrary"
-	BruteLibrary.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+	BruteLibrary.Parent = game.CoreGui
 
 	Main_1.Name = "Main"
 	Main_1.Parent = BruteLibrary
